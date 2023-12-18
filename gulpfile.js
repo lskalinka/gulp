@@ -56,7 +56,6 @@ function css() {
 function js() {
   return gulp.src('src/scripts/*.js')
         .pipe(plumber())
-        .pipe(concat('bundle.js'))
 				.pipe(gulp.dest('dist/'))
         .pipe(browserSync.reload({stream: true}));
 }
