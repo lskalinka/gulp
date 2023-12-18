@@ -1,7 +1,8 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
 :root {
-  --main-font: Inter-Variable;
-  --accent-font: PressStart2P;
+  --main-font: inter-variable;
+  --accent-font: pressstart2p;
   --main-wght: 400;
   --h-wght: 700;
   --bg-color: #fff;
@@ -17,6 +18,6 @@
   --lbl-shadow: #fff;
   --btn-pseudo-text: #fff;
   --like-contour: #000;
-  --like-sparks: #ff0000;
-  --like-main: #ff0000;
+  --like-sparks: #f00;
+  --like-main: #f00;
 }

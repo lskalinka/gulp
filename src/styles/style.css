@@ -1,3 +1,6 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable property-no-unknown */
+/* stylelint-disable no-unknown-animations */
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
@@ -27,7 +30,7 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: "wght" var(--main-wght, 400);
+  font-variation-settings: 'wght' var(--main-wght, 400);
 }
 
 button {
@@ -148,7 +151,7 @@ dialog::backdrop {
 }
 
 .theme-menu__button::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 0;
@@ -172,12 +175,13 @@ dialog::backdrop {
 }
 
 .theme-menu__button:disabled::before {
-  content: "▶";
+  content: '▶';
   position: absolute;
   left: -24px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
+
   .theme-menu__button:disabled::before {
     animation: menu-arrow 0.5s ease-in-out infinite alternate;
   }
@@ -198,7 +202,7 @@ dialog::backdrop {
 .card__heading {
   padding: 3px 0 3px 7px;
   font-size: 18px;
-  font-variation-settings: "wght" var(--h-wght, 700);
+  font-variation-settings: 'wght' var(--h-wght, 700);
 }
 
 .card__img-container {
@@ -263,6 +267,7 @@ dialog::backdrop {
   (text-stroke: 1px var(--lbl-shadow, #fff)) or
     (-webkit-text-stroke: 1px var(--lbl-shadow, #fff))
 ) {
+
   .card__label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--lbl-shadow, #fff);
@@ -333,7 +338,7 @@ dialog::backdrop {
 .card__like-button::after,
 .footer__button::after,
 .dialog__button::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -386,6 +391,7 @@ dialog::backdrop {
 }
 
 @media (width <=375px) {
+
   .content-section {
     inline-size: 100vw;
   }

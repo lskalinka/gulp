@@ -1,9 +1,12 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable property-no-unknown */
 /* В этом файле вы опишете значения переменных в разных цветовых схемах.
 Придерживайтесь такого именования классов:
 ✦ theme-dark — класс тёмной темы
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
 :root.theme-light {
   --main-wght: 400;
   --h-wght: 700;
@@ -25,7 +28,7 @@
   color: var(--accent-color, #000);
   background-color: var(--bg-color, #fff);
   background-image: var(--bg-img);
-  font-variation-settings: "wght" var(--main-wght, 400);
+  font-variation-settings: 'wght' var(--main-wght, 400);
 }
 
 .theme-light .content-section,
@@ -47,6 +50,7 @@
   (text-stroke: 1px var(--lbl-shadow, #fff)) or
     (-webkit-text-stroke: 1px var(--lbl-shadow, #fff))
 ) {
+
   .theme-light .card__label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--lbl-shadow, #fff);
@@ -117,7 +121,7 @@
   color: var(--accent-color, #00cc14);
   background-color: var(--bg-color, #000);
   background-image: var(--bg-img);
-  font-variation-settings: "wght" var(--main-wght, 465);
+  font-variation-settings: 'wght' var(--main-wght, 465);
 }
 
 .theme-dark .content-section,
@@ -139,6 +143,7 @@
   (text-stroke: 1px var(--lbl-shadow, #000)) or
     (-webkit-text-stroke: 1px var(--lbl-shadow, #000))
 ) {
+
   .theme-dark .card__label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--lbl-shadow, #000);
@@ -188,10 +193,12 @@
 }
 
 @media (prefers-color-scheme: light) {
+
   @supports (
     (text-stroke: 1px var(--lbl-shadow, #fff)) or
       (-webkit-text-stroke: 1px var(--lbl-shadow, #fff))
   ) {
+
     .card__label {
       text-shadow: none;
       -webkit-text-stroke: 1px var(--lbl-shadow, #fff);
@@ -220,7 +227,7 @@
     color: var(--accent-color, #000);
     background-color: var(--bg-color, #fff);
     background-image: var(--bg-img);
-    font-variation-settings: "wght" var(--main-wght, 400);
+    font-variation-settings: 'wght' var(--main-wght, 400);
   }
 
   .content-section,
@@ -285,10 +292,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   @supports (
     (text-stroke: 1px var(--lbl-shadow, #000)) or
       (-webkit-text-stroke: 1px var(--lbl-shadow, #000))
   ) {
+
     .theme-dark .card__label {
       text-shadow: none;
       -webkit-text-stroke: 1px var(--lbl-shadow, #000);
@@ -317,7 +326,7 @@
     color: var(--accent-color, #00cc14);
     background-color: var(--bg-color, #000);
     background-image: var(--bg-img);
-    font-variation-settings: "wght" var(--main-wght, 465);
+    font-variation-settings: 'wght' var(--main-wght, 465);
   }
 
   .content-section,
